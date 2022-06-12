@@ -15,11 +15,10 @@ const Header = () => {
                     </span>
                </Link>
                 <div className='hidden md:float-left md:contents'>
-
-                    {Categories.map((cattegory) => (
-                        <Link key={cattegory.slug} href={'/cattegory/${cattegory.slug}'}>
-                        <span className='md:float-right mt2 align-middle text-white ml=4 font-semibold cursor-pointer'>
-                            {cattegory.name}
+                    {Categories.map((category) => (
+                        <Link key={category.slug} href={'/cattegory/${category.slug}'}>
+                        <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                            {category.name}
                         </span>
 
                         </Link>
