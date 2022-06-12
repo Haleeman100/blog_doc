@@ -1,11 +1,11 @@
-import React, { Children } from 'react'
+//import React from 'react'
 import { Header } from './'
 
-const Layout = ({Children}) => {
+const Layout = ({children}) => {
   return (
     <>
         <Header />
-        {Children}
+        {children}
 
     </>
   )
